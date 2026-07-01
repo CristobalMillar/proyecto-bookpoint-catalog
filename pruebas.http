@@ -1,0 +1,21 @@
+## PRUEBA 1: Intentar agregar stock a un producto que NO existe (Debe Fallar)
+POST http://localhost:8082/api/inventarios
+Content-Type: application/json
+
+{
+    "idProducto": 999,
+    "idSucursal": 1,
+    "cantidad": 50
+}
+
+###
+
+### PRUEBA 2: Agregar stock al producto que SÍ existe (Debe Funcionar)
+POST http://localhost:8082/api/inventarios
+Content-Type: application/json
+
+{
+    "idProducto": 1,
+    "idSucursal": 1,
+    "cantidad": 120
+}

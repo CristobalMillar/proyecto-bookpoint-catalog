@@ -5,12 +5,15 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import com.bookpint.catalog.model.categoria;
 import com.bookpint.catalog.model.producto;
 import com.bookpint.catalog.repository.CategoriaRepository;
 import com.bookpint.catalog.repository.ProductoRepository;
 
 @SpringBootApplication
+@EnableFeignClients
+
 public class CatalogApplication {
 
 	public static void main(String[] args) {
